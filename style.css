@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 
 body {
-  background: rgb(25, 25, 43);
+  background: #1c1a19;
 }
 
 .header {
@@ -39,12 +39,17 @@ body {
   color: white;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 .hamburger {
   position: absolute;
   width: 20px;
   height: 15px;
   right: 10px;
   top: 10px;
+  cursor: pointer;
 }
 
 .line-1 {
@@ -78,12 +83,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 120px 24px;
+  width: 375px;
+  height: 590px;
+  padding: 120px, 24px, 120px, 24px;
   gap: 12px;
+  top: 92px;
   position: absolute;
 }
 
 .large-text {
+  display: flex;
+  align-items: center;
   width: 300px;
   height: 120px;
   font-family: 'Crete Round', sans-serif;
@@ -91,25 +101,32 @@ body {
   font-weight: 400;
   font-size: 55px;
   line-height: 60px;
-  color: aquamarine;
+  color: #ff6b00;
+  top: 120px;
+  left: 24px;
+  margin: 0;
 }
 
 .medium-text {
-  width: 350px;
+  width: 325px;
   height: 30px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 24px;
   line-height: 30px;
   display: flex;
   align-items: center;
   color: goldenrod;
-  flex: none;
+  top: 256px;
+  left: 24px;
+  margin: 0;
 }
 
 .small-text {
-  width: 400px;
+  display: flex;
+  align-items: center;
+  width: 325px;
   height: 120px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -117,42 +134,74 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: goldenrod;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
+  top: 295px;
+  left: 24px;
+  margin: 0;
 }
 
 .socials {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 250px;
-  height: 20px;
+  width: 200px;
+  height: 50px;
+  top: 430px;
+  left: 24px;
+  padding: 0;
+  margin: 0;
 }
 
 .twitter {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  height: 24px;
+  width: 24px;
+  left: 8px;
+  top: 8px;
   padding: 8px;
-  width: 20px;
-  height: 20px;
 }
 
 .github {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  height: 24px;
+  width: 24px;
+  left: 8px;
+  top: 8px;
   padding: 8px;
-  width: 20px;
-  height: 20px;
 }
 
 .medium {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 24px;
+    width: 24px;
+    left: 8px;
+    top: 8px;
+    padding: 8px;
+}
+
+.angelist {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  height: 24px;
+  width: 24px;
+  left: 8px;
+  top: 8px;
   padding: 8px;
-  width: 20px;
-  height: 20px;
+}
+
+.linkedin {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 24px;
+  width: 24px;
+  left: 8px;
+  top: 8px;
+  padding: 8px;
 }
