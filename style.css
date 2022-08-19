@@ -174,14 +174,14 @@ a:link {
 }
 
 .medium {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    height: 24px;
-    width: 24px;
-    left: 8px;
-    top: 8px;
-    padding: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 24px;
+  width: 24px;
+  left: 8px;
+  top: 8px;
+  padding: 8px;
 }
 
 .angelist {
