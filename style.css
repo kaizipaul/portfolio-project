@@ -246,7 +246,7 @@ a:link {
 .works > .title > .line {
   width: 100%;
   height: 1px;
-  background:#2121;
+  background: #2121;
 }
 
 .works > .sample {
@@ -351,8 +351,8 @@ a:link {
   background-image:
     linear-gradient(
       180.45deg,
-    rgba(38, 38, 38, 0) 0.75%,
-    rgba(38, 38, 38, 0.9) 61.94%
+      rgba(38, 38, 38, 0) 0.75%,
+      rgba(38, 38, 38, 0.9) 61.94%
     ),
     url("./assets/images/works-section-2.png");
   background-repeat: no-repeat;
@@ -440,7 +440,7 @@ a:link {
   background-color: #ff6b00;
   border-radius: 50%;
 }
-  
+
 .about-page > .languages-grid > .item > div > h5 {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -450,13 +450,13 @@ a:link {
   margin: 3rem 1.5rem;
   padding: 0;
 }
-  
+
 .about-page > .languages-grid > .item > ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  }
-  
+}
+
 .about-page > .languages-grid > .item > ul > li {
   font-family: "Inter", sans-serif;
   font-style: normal;
