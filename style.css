@@ -2,12 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 
 body {
-  top: 0;
-  left: 0;
-  margin: 0;
-  padding: 0;
+  top: 0 !important;
+  left: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
   width: 100vw;
   overflow-x: hidden;
+  font-size: 14px;
 }
 
 .header {
@@ -220,11 +221,11 @@ a:link {
 }
 
 .works > .title {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: start;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 0.5rem;
 }
 
 .about-page > .line {
@@ -307,7 +308,7 @@ a:link {
   justify-content: center;
   margin-top: 1.5rem;
   padding: 0.85rem;
-  border:none;
+  border: none;
   background: #ff6b00;
   height: 3.4rem;
   font-family: 'Inter', sans-serif;
@@ -347,15 +348,15 @@ a:link {
 
 .works > .works-grid > .work-item {
   background-color: #f5f5f5;
-  background-image: 
-  linear-gradient(
-    180.45 deg,
-    rgba(38, 38, 38 ,0) 0.75%,
+  background-image:
+    linear-gradient(
+      180.45deg,
+    rgba(38, 38, 38, 0) 0.75%,
     rgba(38, 38, 38, 0.9) 61.94%
-  ),
-   url("./assets/images/works-section-2.png");
+    ),
+    url("./assets/images/works-section-2.png");
   background-repeat: no-repeat;
-  background-position:center;
+  background-position: center;
   background-size: cover;
 }
 
@@ -370,7 +371,7 @@ a:link {
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
-  background: rgba(255,255,255,0.24);
+  background: rgba(255, 255, 255, 0.24);
   padding: 0.7rem 0.8rem;
 }
 
@@ -430,15 +431,15 @@ a:link {
   width: 1.5rem;
   height: 1.5rem;
   background-color: #ff6b00;
-  }
+}
 
 .about-page > .languages-grid > .item > div > .skills {
-    display: inline-block;
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: #ff6b00;
-    border-radius: 50%;
-  }
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #ff6b00;
+  border-radius: 50%;
+}
   
 .about-page > .languages-grid > .item > div > h5 {
   font-family: "Inter", sans-serif;
@@ -448,7 +449,7 @@ a:link {
   line-height: 44px;
   margin: 3rem 1.5rem;
   padding: 0;
-  }
+}
   
 .about-page > .languages-grid > .item > ul {
   margin: 0;
@@ -462,9 +463,8 @@ a:link {
   font-weight: 400;
   font-size: 22px;
   line-height: 43px;
-  }
+}
 
-  
 .about-page {
   background-color: #1c1a19;
   padding: 10rem 1.7rem;
