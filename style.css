@@ -507,6 +507,10 @@ a:link {
 }
 
 .form-container .form-intro {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
