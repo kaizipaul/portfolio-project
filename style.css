@@ -531,3 +531,30 @@ a:link {
   border-bottom: 2px solid #dbd8d7;
   outline: none;
 }
+
+.your-text {
+  background: #FBF8F7;
+  width: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3C3A39;
+  padding: 1em;
+}
+
+.form-container form button {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px; 
+  color: #FFFFFF;
+  padding: 12px;
+  background: #FF6B00;
+  border: none;
+}
+
