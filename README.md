@@ -2,16 +2,17 @@
 
 > This project is made as a practise for HTML and CSS, and professional code writing.
 
-
 ## Built With
 
 - HTML
 - CSS
+
 ## Authors
 
 👤 **Paul Kaizirege Vedasto**
 
 - GitHub: [@kaizipaul](https://github.com/kaizipaul)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
