@@ -243,6 +243,12 @@ a:link {
   text-align: left;
 }
 
+.form-container > .line {
+  width: 100%;
+  height: 1.5px;
+  background: #dfe1e6;
+}
+
 .works > .title > .line {
   width: 100%;
   height: 1px;
@@ -317,6 +323,18 @@ a:link {
   font-size: 16px;
   line-height: 24px;
   color: white;
+}
+
+.form-container > form button {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  padding: 12px;
+  background: #ff6b00;
+  border: none;
 }
 
 .about-page > button:hover {
@@ -411,6 +429,17 @@ a:link {
   margin-top: 5rem;
   color: #fff;
   list-style: none;
+}
+
+.form-container > .socials-bottom > .socials-bottom-list > li {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 24px;
+  width: 24px;
+  left: 8px;
+  top: 8px;
+  padding: 8px;
 }
 
 .about-page > .languages-grid > .item {
@@ -555,24 +584,6 @@ a:link {
   border: none;
 }
 
-.form-container > form button {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  color: #fff;
-  padding: 12px;
-  background: #ff6b00;
-  border: none;
-}
-
-.form-container > .line {
-  width: 100%;
-  height: 1.5px;
-  background: #dfe1e6;
-}
-
 .form-container > .socials-bottom > .socials-bottom-list {
   display: flex;
   flex-direction: row;
@@ -580,15 +591,4 @@ a:link {
   margin-top: 1rem;
   padding: 0;
   margin-bottom: 0;
-}
-
-.form-container > .socials-bottom > .socials-bottom-list > li {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  height: 24px;
-  width: 24px;
-  left: 8px;
-  top: 8px;
-  padding: 8px;
 }
