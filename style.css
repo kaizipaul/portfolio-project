@@ -904,7 +904,7 @@ body {
   }
 
   .works > .works-grid > .work-item > button {
-    display: flex;
+    display: none;
     align-items: center;
     background-color: #ff6b00;
     justify-content: center;
@@ -916,6 +916,8 @@ body {
     font-weight: 700;
     font-size: 24px;
     color: white;
+    margin-top: 15.6rem;
+    z-index: 2;
   }
 
   .about-page > .about-flex > button:hover {
@@ -945,7 +947,7 @@ body {
 
   .works > .works-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 0.5fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     grid-gap: 1.5rem;
     color: #091e42;
     padding: 0 6rem;
@@ -963,6 +965,22 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    z-index: 0;
+  }
+
+  .works > .works-grid > .work-item:hover {
+    background-image: url('./assets/images/works-section-2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    background-size: cover;
+    border: 1px solid black;
+    cursor: pointer;
+    color: transparent;
+  }
+
+  .works > .works-grid > .work-item:hover > button {
+    display: block;
   }
 
   .works > .works-grid > .work-item > .work-item-content {
@@ -980,10 +998,27 @@ body {
     padding: 0.5rem 0.6rem;
   }
 
+  .works > .works-grid > .work-item:hover > .work-item-content > h3,
+  .works > .works-grid > .work-item:hover > .work-item-content > p,
+  .works > .works-grid > .work-item:hover > .work-item-content > .tags,
+  .works > .works-grid > .work-item:hover > .work-item-content > .tags > .tag-item {
+    color: transparent;
+    display: none;
+  }
+
   .works > .works-grid > .work-item > button:hover {
-    background-color: #fff5e1;
-    border: 1px solid #f55800;
-    color: #f55800;
+    display: flex;
+    align-items: center;
+    background-color: #ff6b00;
+    justify-content: center;
+    border: none;
+    width: 100%;
+    padding: 0.85rem;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
     cursor: pointer;
   }
 
@@ -1117,7 +1152,7 @@ body {
     width: 42rem;
     flex-direction: column;
     height: 20rem;
-    margin-top: 10rem;
+    margin-top: 13.6rem;
     margin-bottom: 8rem;
   }
 
