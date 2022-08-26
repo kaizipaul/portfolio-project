@@ -387,8 +387,7 @@ body {
 
   .works > .works-grid > .work-item {
     background-color: #f5f5f5;
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         180.45deg,
         rgba(38, 38, 38, 0) 0.75%,
         rgba(38, 38, 38, 0.9) 61.94%
@@ -903,6 +902,7 @@ body {
     border: none;
     background: #ff6b00;
     height: 3.4rem;
+    transition: 0.5s;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -963,13 +963,13 @@ body {
 
   .works > .works-grid > .work-item {
     background-color: #f5f5f5;
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         180.45deg,
         rgba(38, 38, 38, 0) 0.75%,
         rgba(38, 38, 38, 0.9) 61.94%
       ),
       url('./assets/images/works-section-2.png');
+    transition: transform 0.5s;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -980,6 +980,7 @@ body {
     background-image: url('./assets/images/works-section-2.png');
     background-repeat: no-repeat;
     background-position: center;
+    transform: scale(1.1);
     z-index: 1;
     background-size: cover;
     border: 1px solid black;
@@ -1009,7 +1010,12 @@ body {
   .works > .works-grid > .work-item:hover > .work-item-content > h3,
   .works > .works-grid > .work-item:hover > .work-item-content > p,
   .works > .works-grid > .work-item:hover > .work-item-content > .tags,
-  .works > .works-grid > .work-item:hover > .work-item-content > .tags > .tag-item {
+  .works
+    > .works-grid
+    > .work-item:hover
+    > .work-item-content
+    > .tags
+    > .tag-item {
     color: transparent;
     display: none;
   }
