@@ -750,6 +750,14 @@ body {
     left: 8px;
     top: 8px;
     padding: 8px;
+    transition: transform 0.3s;
+  }
+
+  .github:hover,
+  .linkedin:hover,
+  .medium:hover,
+  .angelist:hover {
+    transform: scale(1.2);
   }
 
   .works {
@@ -1192,6 +1200,11 @@ body {
     margin-top: 1rem;
     padding: 0;
     margin-bottom: 0;
+    transition: transform 0.3s;
+  }
+
+  .form-container > .socials-bottom > .socials-bottom-list > li:hover {
+    transform: scale(1.2);
   }
 
   .form-container > .form-flex {
