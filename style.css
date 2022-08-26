@@ -868,6 +868,7 @@ body {
     line-height: 24px;
     color: white;
     cursor: pointer;
+    transition: 0.5s;
   }
 
   .form-container > .form-flex > form button {
@@ -883,6 +884,7 @@ body {
     display: flex;
     align-items: flex-start;
     cursor: pointer;
+    transition: 0.5s;
   }
 
   .works > .sample > .sample-para > button {
