@@ -756,6 +756,7 @@ body {
   .github:hover,
   .linkedin:hover,
   .medium:hover,
+  .twitter:hover,
   .angelist:hover {
     transform: scale(1.2);
   }
