@@ -18,3 +18,17 @@ document.querySelector('.close-button').addEventListener('click', mobileMenu);
 for (let i = 0; i < menuList.length; i += 1) {
   menuList[i].addEventListener('click', mobileMenu);
 }
+
+function disableScroll() {
+  const horizontalPos = window.scrollX;
+  const verticalPos = window.scrollY;
+  window.onscroll = () => {
+    window.scroll(horizontalPos, verticalPos);
+  };
+}
+
+function enableScroll() {
+  window.onscroll = '';
+}
+enableScroll()
+disableScroll()
