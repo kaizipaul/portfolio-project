@@ -102,7 +102,7 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 0.2rem;
-    height: 90%;
+    height: 90vh;
     background-color: #3c3a39;
     margin-left: 2.5rem;
     width: 100%;
@@ -124,8 +124,8 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 0.8rem;
-    margin-right: 1.2rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
   }
 
   .close > .close-button {
@@ -652,7 +652,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100vw;
-    height: 10vh;
+    max-height: 10vh;
     left: 0;
     top: 0;
     background: #3c3a39;
