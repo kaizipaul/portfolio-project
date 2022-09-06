@@ -652,7 +652,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100vw;
-    max-height: 10vh auto;
+    height: 10vh auto;
     left: 0;
     top: 0;
     background: #3c3a39;
