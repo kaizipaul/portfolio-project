@@ -6,6 +6,8 @@ const cardsData = [
     image: './assets/images/card-image.png',
     description:
         "1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    technologies: ['CSS', 'Javascript', 'Ruby'],
+    link: 'link_to_live_version.com',
   },
   {
     id: 2,
@@ -13,7 +15,8 @@ const cardsData = [
     image: './assets/images/card-image.png',
     description:
         "2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-
+    technologies: ['CSS', 'Javascript', 'Ruby'],
+    link: 'link_to_live_version.com',
   },
   {
     id: 3,
@@ -21,6 +24,8 @@ const cardsData = [
     image: './assets/images/card-image.png',
     description:
         "3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    technologies: ['CSS', 'Javascript', 'Boostrap'],
+    link: 'link_to_live_version.com',
   },
   {
     id: 4,
@@ -28,6 +33,8 @@ const cardsData = [
     image: './assets/images/card-image.png',
     description:
         "4 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    technologies: ['CSS', 'HTML', 'Ruby'],
+    link: 'link_to_live_version.com',
   },
   {
     id: 5,
@@ -35,6 +42,8 @@ const cardsData = [
     image: './assets/images/card-image.png',
     description:
         "5 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    technologies: ['HTML', 'Javascript', 'Ruby'],
+    link: 'link_to_live_version.com',
   },
   {
     id: 6,
@@ -42,6 +51,8 @@ const cardsData = [
     image: './assets/images/works-section.png',
     description:
         "6 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    technologies: ['CSS', 'Javascript', 'Ruby'],
+    link: 'link_to_live_version.com',
   },
 ];
 
