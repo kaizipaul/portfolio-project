@@ -8,7 +8,7 @@ body {
   padding: 0 !important;
   width: 100vw;
   font-size: 14px;
-  min-width: 100vw;
+  max-width: 100vw;
   box-sizing: border-box;
   overflow-x: hidden;
   white-space: normal;
@@ -120,7 +120,7 @@ body {
     margin-left: 0.8rem;
   }
 
-  .close {
+  .mobile-menu > .close {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -137,7 +137,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100vw;
     padding: 10rem 0.5rem;
     top: 7vh;
     position: relative;
@@ -290,7 +289,7 @@ body {
   }
 
   .form-container > .line {
-    width: 100%;
+    width: 85vw;
     height: 1.5px;
     background: #dfe1e6;
   }
@@ -387,6 +386,7 @@ body {
     padding: 12px;
     background: #ff6b00;
     border: none;
+    margin: 0 2rem 0 4rem;
   }
 
   .about-page > .about-flex > button:hover {
@@ -472,6 +472,154 @@ body {
     cursor: pointer;
   }
 
+  .works > .works-grid > .work-item-1 {
+    display: none;
+  }
+
+  #cards-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 300ms ease-in-out;
+    z-index: 11;
+    background-color: white;
+    width: 85vw;
+    max-height: 90vh;
+    padding: 1rem 1.2rem;
+    overflow: auto;
+  }
+
+  #cards-popup.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  #cards-popup > .title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #cards-popup > .title > h3 {
+    color: #172b4d;
+    font-size: 2.35rem;
+    font-weight: 700;
+    line-height: 0.35rem;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+  }
+
+  #cards-popup > .body > div > p {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #344563;
+  }
+
+  #cards-popup > .tags {
+    list-style: none;
+    margin: 2rem 0 0.8rem 0;
+    padding: 0;
+  }
+
+  #cards-popup > .tags > .tag-item {
+    float: left;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #091e42;
+    border: 1px solid #091e42;
+    padding: 0.7rem 0.8rem;
+  }
+
+  #cards-popup > .title > .close {
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  #cards-popup > .body {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  .about-page > .languages-grid > .item > div {
+    display: flex;
+    align-items: center;
+  }
+
+  #cards-popup > .body > div {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #cards-popup > .body > div > .buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  #cards-popup > .body > div > .buttons > button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.9rem;
+    border: none;
+    background: #ff6b00;
+    height: 3.4rem;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    line-height: 1.5rem;
+    color: white;
+    transition: 0.3s;
+  }
+
+  #cards-popup > .body > div > .buttons > button > i {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+  }
+
+  #cards-popup > .body > img {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+  }
+
+  .overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 300ms ease-in-out;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
   .about-page > .languages-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -483,27 +631,11 @@ body {
     list-style: none;
   }
 
-  .form-container > .socials-bottom > .socials-bottom-list > li {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    height: 24px;
-    width: 24px;
-    left: 8px;
-    top: 8px;
-    padding: 8px;
-  }
-
   .about-page > .languages-grid > .item {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-  }
-
-  .about-page > .languages-grid > .item > div {
-    display: flex;
-    align-items: center;
   }
 
   .about-page > .languages-grid > .item > div > .language {
@@ -582,16 +714,18 @@ body {
   }
 
   .form-container {
-    text-align: center;
-    padding: 2em;
-    border: 2px solid goldenrod;
+    position: relative;
+    padding: 9.5rem 3rem 0 3rem;
   }
 
-  .form-container .form-intro {
+  .form-flex {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .form-container .form-intro {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -599,12 +733,14 @@ body {
     line-height: 44px;
     width: 20rem;
     margin-top: 3rem;
+    text-align: center;
   }
 
   .form-container form {
     display: flex;
     flex-direction: column;
     margin-bottom: 8rem;
+    justify-content: center;
   }
 
   .form-container form input {
@@ -638,8 +774,8 @@ body {
 
   .form-container > .socials-bottom > .socials-bottom-list {
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    align-items: center;
     margin-top: 1rem;
     padding: 0;
     margin-bottom: 0;
@@ -1038,7 +1174,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    z-index: 0;
+    z-index: 1;
   }
 
   .works > .works-grid > .work-item:hover {
@@ -1046,7 +1182,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     transform: scale(1.1);
-    z-index: 1;
+    z-index: 3;
     background-size: cover;
     border: 1px solid black;
     cursor: pointer;
@@ -1094,6 +1230,147 @@ body {
     font-size: 24px;
     color: white;
     cursor: pointer;
+  }
+
+  #cards-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 300ms ease-in-out;
+    z-index: 11;
+    background-color: white;
+    width: 80vw;
+    height: 90vw;
+    max-height: 90%;
+    padding: 1rem 1.2rem;
+    overflow: auto;
+  }
+
+  #cards-popup.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  #cards-popup > .title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #cards-popup > .title > .close {
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 0.5rem;
+  }
+
+  #cards-popup > .body {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 1.6rem;
+    height: 60vh;
+  }
+
+  .about-page > .languages-grid > .item > div {
+    display: flex;
+    align-items: center;
+  }
+
+  #cards-popup > .body > div {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #cards-popup > .body > div > .buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  #cards-popup .body > div > .buttons > button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.9rem;
+    border: none;
+    background: #ff6b00;
+    height: 3.4rem;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    line-height: 1.5rem;
+    color: white;
+    transition: 0.3s;
+  }
+
+  #cards-popup .body > div > .buttons > button > i {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+  }
+
+  #cards-popup > .title > h3 {
+    color: #172b4d;
+    font-size: 2.35rem;
+    font-weight: 700;
+    line-height: 0.35rem;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+  }
+
+  #cards-popup > .body > div > p {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #344563;
+  }
+
+  #cards-popup > .tags {
+    list-style: none;
+    margin: 2rem 0 0.8rem 0;
+    padding: 0;
+  }
+
+  #cards-popup > .tags > .tag-item {
+    float: left;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #091e42;
+    border: 1px solid #091e42;
+    padding: 0.7rem 0.8rem;
+  }
+
+  .overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 300ms ease-in-out;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .overlay.active {
+    opacity: 1;
+    pointer-events: all;
   }
 
   .about-page {
@@ -1146,11 +1423,6 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-  }
-
-  .about-page > .languages-grid > .item > div {
-    display: flex;
-    align-items: center;
   }
 
   .about-page > .languages-grid > .item > div > .language {
