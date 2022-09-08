@@ -127,3 +127,20 @@ cardsClose.addEventListener('click', () => {
   overlay.classList.remove('active');
   enableScroll();
 });
+
+sampleProjectBtn.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    windowTitle.innerHTML = 'Multi Post Stories';
+    windowDesc.innerHTML = `Lorem Ipsum is simply dummy text of the printing and typesetting
+    industry. Lorem Ipsum has been the industry's standard dummy text
+    ever since the 1500s, when an unknown printer took a galley of
+    type and scrambled it 1960s with the releaLorem Ipsum is simply
+    dummy text of the printing and typesetting industry. Lorem Ipsum
+    has been the industry's standard dummy text ever since the 1500s,
+    when an unknown printer took a galley of type and scrambled it
+    1960s with the releax map lapora verita.`;
+    cardsPopup.classList.add('active');
+    overlay.classList.add('active');
+    disableScroll();
+  });
+});
