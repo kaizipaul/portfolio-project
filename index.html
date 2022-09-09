@@ -7,10 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaizipaul's Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
 </head>
 
 <body>
@@ -138,41 +135,41 @@
 
     <!--card popup-->
     <div id="cards-popup">
-          <div class="title">
+        <div class="title">
             <h3>Multi Post Stories</h3>
             <div class="close"><i class="fa-solid fa-xmark"></i></div>
-          </div>
-          <ul class="tags">
+        </div>
+        <ul class="tags">
             <li class="tag-item">css</li>
             <li class="tag-item">html</li>
             <li class="tag-item">bootstrap</li>
             <li class="tag-item">Ruby</li>
-          </ul>
-          <div class="body">
+        </ul>
+        <div class="body">
             <img src="./assets/images/card-image.png" alt="work-1" />
             <div>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy text
-                ever since the 1500s, when an unknown printer took a galley of
-                type and scrambled it 1960s with the releaLorem Ipsum is simply
-                dummy text of the printing and typesetting industry. Lorem Ipsum
-                has been the industry's standard dummy text ever since the 1500s,
-                when an unknown printer took a galley of type and scrambled it
-                1960s with the releax map lapora verita.
-              </p>
-              <div class="buttons">
-                <button type="button">
-                  See Live <i class="fa-solid fa-laptop"></i>
-                </button>
-                <button type="button">
-                  See Source <i class="fa-brands fa-github"></i>
-                </button>
-              </div>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                    ever since the 1500s, when an unknown printer took a galley of
+                    type and scrambled it 1960s with the releaLorem Ipsum is simply
+                    dummy text of the printing and typesetting industry. Lorem Ipsum
+                    has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it
+                    1960s with the releax map lapora verita.
+                </p>
+                <div class="buttons">
+                    <button type="button">
+                        See Live <i class="fa-solid fa-laptop"></i>
+                    </button>
+                    <button type="button">
+                        See Source <i class="fa-brands fa-github"></i>
+                    </button>
+                </div>
             </div>
-          </div>
-      </div>
-      <div class="overlay"></div>
+        </div>
+    </div>
+    <div class="overlay"></div>
 
     <!--about-me section-->
 
@@ -237,16 +234,26 @@
             <h2 class="form-intro">
                 I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
             </h2>
-            <form action="https://formspree.io/f/mwkzpvyn" method="POST">
-
-                <input type="text" name="name" class="name" placeholder="Full name" maxlength="30" required>
-
-                <input type="email" name="email" class="email" placeholder="Email address" required>
+            <form id="form-validation" action="https://formspree.io/f/mwkzpvyn" method="POST">
+                <ul>
+                    <li>
+                <input type="text" name="name" class="name" placeholder="Full name" maxlength="30">
+                <small class="error-msg"></small>
+                    </li>
+                    <li>
+                <input type="email" name="email" class="email" placeholder="Email address">
+                <small class="error-msg"></small>
+                    </li>
+                    <li>
                 <textarea name="your-text" class="your-text" cols="30" rows="10" maxlength="500"
-                    placeholder="Write your message here" required></textarea>
+                    placeholder="Write your message here"></textarea>
+                </li>
+                   <li> 
                 <div class="bottom-button">
                     <button type="submit">Get in Touch</button>
                 </div>
+                   </li>
+            </ul>
             </form>
         </div>
 
