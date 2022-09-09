@@ -1557,8 +1557,9 @@ body {
 
   .error-msg {
     font-family: 'Inter', sans-serif;
+    font-weight: 700;
     color: #f00;
-    font-size: 0.8rem;
+    font-size: 6rem;
     margin-top: 2rem;
   }
 

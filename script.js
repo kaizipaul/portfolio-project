@@ -157,9 +157,12 @@ sampleProjectBtn.forEach((btn) => {
 });
 
 function showMessage(input, message, type) {
-  const msg = input.parentNode.querySelector('small');
+  const msg = document.querySelector('.error-msg');
   msg.innerText = message;
   input.className = type ? '' : 'input-error';
+  setTimeout(() => {
+    msg.innerText = '';
+  }, 3500);
   return type;
 }
 
