@@ -155,3 +155,44 @@ sampleProjectBtn.forEach((btn) => {
     disableScroll();
   });
 });
+
+function showMessage(input, message, type) {
+  const msg = input.parentNode.querySelector('small');
+  msg.innerText = message;
+  input.className = type ? '' : 'input-error';
+  return type;
+}
+
+function errorMsg(input, message) {
+  return showMessage(input, message, false);
+}
+
+function successMsg(input) {
+  return showMessage(input, '', true);
+}
+
+function hasValue(input, message) {
+  if (input.value.trim() === '') {
+    return errorMsg(input, message);
+  }
+  return successMsg(input);
+}
+
+function checkEmail(input, requiredMsg, invalidMsg) {
+  if (!hasValue(input, requiredMsg)) {
+    return false;
+  }
+
+  const emailStr = /^[a-z][a-z0-9_@.]*$/;
+
+  const email = input.value.trim();
+  if (!emailStr.test(email)) {
+    return errorMsg(input, invalidMsg);
+  }
+  return true;
+}
+
+const form = document.querySelector('#form-validation');
+const EMAIL_REQUIRED = 'Please enter your email';
+const NAME_REQUIRED = 'Please enter your name';
+const INVALID_EMAIL = 'Please enter your email in a correct format';
