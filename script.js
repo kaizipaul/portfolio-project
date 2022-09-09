@@ -196,3 +196,16 @@ const form = document.querySelector('#form-validation');
 const EMAIL_REQUIRED = 'Please enter your email';
 const NAME_REQUIRED = 'Please enter your name';
 const INVALID_EMAIL = 'Please enter your email in a correct format';
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const validName = hasValue(form.elements.name, NAME_REQUIRED);
+  const validEmail = checkEmail(form.elements.email, EMAIL_REQUIRED, INVALID_EMAIL);
+
+  if (validName && validEmail) {
+    form.submit();
+    form.elements.name.value = '';
+    form.elements.email.value = '';
+  }
+});
