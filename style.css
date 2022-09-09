@@ -386,7 +386,8 @@ body {
     padding: 12px;
     background: #ff6b00;
     border: none;
-    margin: 0 2rem 0 4rem;
+    align-items: center;
+    cursor: pointer;
   }
 
   .about-page > .about-flex > button:hover {
@@ -671,6 +672,14 @@ body {
     padding: 0;
   }
 
+  .form-container form ul li {
+    list-style: none;
+  }
+
+  .form-container form ul {
+    padding-left: 0.1rem;
+  }
+
   .about-page > .languages-grid > .item > ul {
     margin: 0;
     padding: 0;
@@ -720,9 +729,10 @@ body {
 
   .form-flex {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     justify-content: center;
+    gap: 1rem;
   }
 
   .form-container .form-intro {
@@ -731,7 +741,7 @@ body {
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
-    width: 20rem;
+    width: 100%;
     margin-top: 3rem;
     text-align: center;
   }
@@ -741,6 +751,8 @@ body {
     flex-direction: column;
     margin-bottom: 8rem;
     justify-content: center;
+    width: 90%;
+    gap: 1rem;
   }
 
   .form-container form input {
@@ -755,11 +767,13 @@ body {
     border-right: none;
     border-bottom: 2px solid #dbd8d7;
     outline: none;
+    width: 100%;
+    margin-top: 1rem;
   }
 
   .your-text {
     background: #fbf8f7;
-    width: 95%;
+    width: 100%;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     font-family: 'Inter', sans-serif;
@@ -770,6 +784,17 @@ body {
     color: #3c3a39;
     padding: 1em;
     border: none;
+  }
+
+  .input-error {
+    border: 1px solid #f00 !important;
+  }
+
+  .error-msg {
+    font-family: 'Inter', sans-serif;
+    color: #f00;
+    font-size: 0.8rem;
+    margin-top: 2rem;
   }
 
   .form-container > .socials-bottom > .socials-bottom-list {
@@ -1459,6 +1484,14 @@ body {
     padding: 0;
   }
 
+  .form-container form ul li {
+    list-style: none;
+  }
+
+  .form-container form ul {
+    padding-left: 0.1rem;
+  }
+
   .about-page > .languages-grid > .item > ul {
     margin: 0;
     padding: 0;
@@ -1474,7 +1507,6 @@ body {
   }
 
   .form-container {
-    text-align: center;
     padding: 2em;
     border: 2px solid goldenrod;
   }
@@ -1515,11 +1547,24 @@ body {
     border-right: none;
     border-bottom: 2px solid #dbd8d7;
     outline: none;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .input-error {
+    border: 1px solid #f00 !important;
+  }
+
+  .error-msg {
+    font-family: 'Inter', sans-serif;
+    color: #f00;
+    font-size: 0.8rem;
+    margin-top: 2rem;
   }
 
   .your-text {
     background: #fbf8f7;
-    width: 95%;
+    width: 100%;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     font-family: 'Inter', sans-serif;
