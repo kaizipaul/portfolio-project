@@ -82,7 +82,7 @@ function mobileMenu() {
     headerBar.style.display = 'block';
     enableScroll();
   } else {
-    menu.style.display = 'block';
+    menu.style.display = 'flex';
     headerBar.style.display = 'none';
     disableScroll();
   }
