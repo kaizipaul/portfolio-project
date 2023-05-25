@@ -6,175 +6,151 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaizipaul's Portfolio</title>
+    <script src="https://kit.fontawesome.com/7fe3127ccf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
 </head>
 
 <body>
 
     <!--the header-->
 
-    <header class="header">
-        <a href="" target="_blank" class="logo" rel="noopener">∆KZRG</a>
-        <nav class="hamburger">
-            <div class="line-1"></div>
-            <div class="line-2"></div>
-            <div class="line-3"></div>
-        </nav>
-        <div class="mobile-menu">
-            <div class="close"><img src="./assets/images/cancel-menu.svg" class="close-button" alt="close mobile menu">
+    <header class="header flex">
+        <!-- header logo -->
+        <a href="" target="_blank" class="logo" rel="noopener">Paul Kaizirege</a>
+
+        <i class="fa-solid fa-bars"></i>
+
+        <!-- hamburger menu -->
+        <nav class="mobile-menu">
+            <div class="close">
+                <i class="fa-solid fa-xmark"></i>
             </div>
             <div class="menu-container">
-                <p class="portfolio">
-                    <a href="#works">
+                <ul>
+                <li class="portfolio">
+                    <a href="#my-portfolio">
                         Portfolio
                     </a>
-                </p>
-                <div class="line"></div>
-                <p class="about">
+                </li>
+                <li class="about">
                     <a href="#about-page">
                         About
                     </a>
-                </p>
-                <div class="line"></div>
-                <p class="contact">
-                    <a href="#form-container">
+                </li>
+                <li class="contact">
+                    <a href="#contact-form">
                         Contact
                     </a>
-                </p>
-                <div class="line"></div>
+                </li>
+            </ul>
             </div>
-        </div>
-        <nav class="desktop-nav">
+        </nav>
+
+        <!-- desktop menu -->
+        <nav class="desktop-nav flex">
             <p class="portfolio">
-                <a href="#">
+                <a href="#my-portfolio">
                     Portfolio
                 </a>
             </p>
             <p class="about">
-                <a href="#">
+                <a href="#about-page">
                     About
                 </a>
             </p>
             <p class="contact">
-                <a href="#">
+                <a href="#contact-form">
                     Contact
                 </a>
             </p>
-            <img src="./assets/svg/mail-icon.svg" alt="mail">
+            <i class="fa-solid fa-envelope"></i>
         </nav>
     </header>
 
-    <!--intro section-->
+    <!--landing page-->
 
     <section id="landing-page" class="landing-page">
-        <div class="intro-text">
-            <h1 class="large-text">Hey There. I'm Kai</h1>
+        <div class="landing-page-content flex">
+        <div class="intro-text flex">
+            <h1 class="large-text">Hey There.
+                <br> I'm Kai</h1>
             <h3 class="medium-text">I'm a Software Developer</h3>
             <h5 class="small-text">I can help you build a product , feature or website Look through some of my work and
                 experience! If you like what you see and have a project you need coded,
                 don't hestiate to contact me.</h5>
         </div>
-        <ul class="socials">
+        <ul class="socials flex">
             <li class="github">
-                <a href="https://github.com">
-                    <img src="./assets/svg/github.svg" alt="connect on github">
+                <a href="https://github.com/kaizipaul">
+                    <i class="fa-brands fa-github"></i>
                 </a>
             </li>
             <li class="linkedin">
                 <a href="https://linkedin.com">
-                    <img src="./assets/svg/linkedin.svg" alt="connect on linkedin">
+                    <i class="fa-brands fa-linkedin-in"></i>
                 </a>
             </li>
             <li class="angelist">
                 <a href="https://angelist.com">
-                    <img src="./assets/svg/angelist.svg" alt="connect on angelist">
+                    <i class="fa-brands fa-angellist"></i>
                 </a>
             </li>
             <li class="twitter">
                 <a href="http://www.twitter.com/mykved">
-                    <img src="./assets/svg/twitter.svg" alt="follow on twitter">
+                    <i class="fa-brands fa-twitter"></i>
                 </a>
             </li>
             <li class="medium">
                 <a href="#">
-                    <img src="./assets/svg/medium.svg" alt="connect on medium">
+                    <i class="fa-brands fa-medium"></i>
                 </a>
             </li>
         </ul>
+    </div>
     </section>
 
     <!--works section-->
 
-    <section id="works" class="works">
-        <div class="title">
+    <section id="my-portfolio" class="my-portfolio">
+        <div class="title flex">
             <h2>My Recent Works</h2>
             <div class="line"></div>
         </div>
-        <div class="sample">
-            <img src="./assets/images/works-section.png" alt="work-section-photo">
-            <div class="sample-para">
+
+        <!-- sample project -->
+        <div class="sample flex">
+            <!-- <img src="./assets/images/works-section.png" alt="work-section-photo">
+            <div class="sample-para flex">
                 <h3>Multi-Post Stories</h3>
                 <p class="works-para">
                     A daily selection of privately personalized reads; no accounts or
                     sign-ups required. has been the industry's standard dummy text ever
                     since the 1500s, when an unknown printer took a standard dummy text.
                 </p>
-                <ul class="tags">
+                <ul class="tags flex">
                     <li class="tag-item">CSS</li>
                     <li class="tag-item">HTML</li>
                     <li class="tag-item">Bootstrap</li>
                     <li class="tag-item">Ruby</li>
                 </ul>
-                <button class="sample-section-btn" type="button">See Project</button>
-            </div>
+                <button class="sample-btn" type="button">See Project</button>
+            </div> -->
         </div>
+
+        <!-- projects showcase -->
         <div class="works-grid">
         </div>
     </section>
 
     <!--card popup-->
-    <div id="cards-popup">
-        <div class="title">
-            <h3>Multi Post Stories</h3>
-            <div class="close"><i class="fa-solid fa-xmark"></i></div>
-        </div>
-        <ul class="tags">
-            <li class="tag-item">css</li>
-            <li class="tag-item">html</li>
-            <li class="tag-item">bootstrap</li>
-            <li class="tag-item">Ruby</li>
-        </ul>
-        <div class="body">
-            <img src="./assets/images/card-image.png" alt="work-1" />
-            <div>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting
-                    industry. Lorem Ipsum has been the industry's standard dummy text
-                    ever since the 1500s, when an unknown printer took a galley of
-                    type and scrambled it 1960s with the releaLorem Ipsum is simply
-                    dummy text of the printing and typesetting industry. Lorem Ipsum
-                    has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it
-                    1960s with the releax map lapora verita.
-                </p>
-                <div class="buttons">
-                    <button type="button">
-                        See Live <i class="fa-solid fa-laptop"></i>
-                    </button>
-                    <button type="button">
-                        See Source <i class="fa-brands fa-github"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
+    <div class="modal-container">
     </div>
     <div class="overlay"></div>
 
     <!--about-me section-->
 
     <section id="about-page" class="about-page">
-        <div class="about-flex">
+        <div class="about flex">
             <h1 class="large-intro">
                 About Me
             </h1>
@@ -186,13 +162,13 @@
             <button type="button">Get My Resume</button>
         </div>
         <div class="line"></div>
-        <ul class="languages-grid">
+        <ul class="skills-grid">
             <li class="item">
-                <div>
-                    <span class="language"></span>
+                <div class="flex">
+                    <i class="fa-brands fa-square-js"></i>
                     <h5>Languages</h5>
                 </div>
-                <ul>
+                <ul class="flex">
                     <li>Javascript</li>
                     <li>Ruby</li>
                     <li>HTML</li>
@@ -200,11 +176,11 @@
                 </ul>
             </li>
             <li class="item">
-                <div>
-                    <span class="frameworks"></span>
+                <div class="flex">
+                    <i class="fa-brands fa-react"></i>
                     <h5>Frameworks</h5>
                 </div>
-                <ul>
+                <ul class="flex">
                     <li>Bootstrap</li>
                     <li>Ruby on Rails</li>
                     <li>RSPec</li>
@@ -213,11 +189,11 @@
                 </ul>
             </li>
             <li class="item">
-                <div>
-                    <span class="skills"></span>
+                <div class="flex">
+                    <i class="fa-brands fa-git-alt"></i>
                     <h5>Skills</h5>
                 </div>
-                <ul>
+                <ul class="flex">
                     <li>Github</li>
                     <li>Codepen</li>
                     <li>Gitlab</li>
@@ -229,69 +205,57 @@
 
     <!--forms section-->
 
-    <section id="form-container" class="form-container">
-        <div class="form-flex">
+    <section id="contact-form" class="contact-form">
+        <div class="form-container flex">
             <h2 class="form-intro">
                 I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
             </h2>
-            <form id="form-validation" action="https://formspree.io/f/mwkzpvyn" method="POST">
-                <ul>
-                    <li>
+            <form id="form-validation" class="flex" action="https://formspree.io/f/mwkzpvyn" method="POST">
                         <input type="text" name="name" class="name" placeholder="Full name" maxlength="30">
-                    </li>
-                    <li>
+                    
                         <input type="email" name="email" class="email" placeholder="Email address">
-
-                    </li>
-                    <li>
                         <textarea name="your-text" class="your-text" cols="30" rows="10" maxlength="500"
                             placeholder="Write your message here"></textarea>
-                    </li>
-                    <li>
-                        <div class="bottom-button">
                             <button type="submit">Get in Touch</button>
-                        </div>
-                    </li>
-                </ul>
                 <span class="error-msg"></span>
                 <span class="error-msg"></span>
             </form>
         </div>
 
-        <div class="line"></div>
-        <footer class="socials-bottom">
-            <ul class="socials-bottom-list">
-                <li class="github">
-                    <a href="https://github.com">
-                        <img src="./assets/svg/github-dark.svg" alt="connect on github">
-                    </a>
-                </li>
-                <li class="linkedin">
-                    <a href="https://linkedin.com">
-                        <img src="./assets/svg/linkedin-dark.svg" alt="connect on linkedin">
-                    </a>
-                </li>
-
-                <li class="angelist">
-                    <a href="https://angelist.com">
-                        <img src="./assets/svg/angelist-dark.svg" alt="connect on angelist">
-                    </a>
-                </li>
-                <li class="twitter">
-                    <a href="http://www.twitter.com/mykved">
-                        <img src="./assets/svg/twitter-dark.svg" alt="follow on twitter">
-                    </a>
-                </li>
-
-                <li class="medium">
-                    <a href="https://medium.com">
-                        <img src="./assets/svg/medium-dark.svg" alt="connect on medium">
-                    </a>
-                </li>
-            </ul>
-        </footer>
+        
     </section>
+    <footer>
+        <div class="line"></div>
+        <ul class="footer-socials flex">
+            <li>
+                <a href="https://github.com/kaizipaul">
+                    <i class="fa-brands fa-solid fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://linkedin.com">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </li>
 
+            <li>
+                <a href="https://angelist.com">
+                    <i class="fa-brands fa-angellist"></i>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.twitter.com/mykved">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://medium.com">
+                    <i class="fa-brands fa-medium"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
     <script src="script.js"></script>
 </body>
 
