@@ -5,70 +5,88 @@ const projectData = [
     title: 'To-do List',
     image: './assets/images/to-do-list-screenshot.png',
     description:
-        "3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    tags: ['CSS', 'Javascript', 'HTML', 'Webpack'],
+        'This project showcases the implementation of a basic to-do list using Webpack. It offers a seamless and efficient task management experience, allowing users to easily create, organize, and complete tasks. With its sleek design and powerful functionality, this project demonstrates the potential of Webpack in building practical and intuitive web applications.',
+    tags: ['Tailwind CSS', 'Javascript', 'Webpack'],
     live_link: 'https://kaizipaul.github.io/to-do-list/dist/',
-    source_link: 'link_to_source_version.com',
+    source_link: 'https://github.com/kaizipaul/to-do-list',
   },
   {
     id: 2,
     title: 'Awesome Books',
     image: './assets/images/awesome-books.png',
     description:
-    "3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    'Experience the power of ES6 Classes and the art of medium-fidelity wireframing in UI design with this captivating JavaScript project. Built using JavaScript, HTML, and CSS, this project combines the elegance of ES6 Classes with the creativity of wireframing techniques to deliver an immersive user interface experience. Discover the seamless integration of these technologies as you explore the intricacies of building dynamic and interactive web applications.',
     tags: ['CSS', 'Javascript', 'HTML'],
-    live_link: 'link_to_live_version.com',
-    source_link: 'link_to_source_version.com',
+    live_link: 'https://kaizipaul.github.io/awesome-books/',
+    source_link: 'https://github.com/kaizipaul/awesome-books',
   },
   {
     id: 3,
     title: 'Rick and Morty DB',
     image: './assets/images/rickandmorty.png',
     description:
-        'In this Project I built a React App that returns a list of 25 random Rick & Morty characters and their details. A user can search for characters in the search box and can hit refresh to reload the characters. The user can also click on the character card to view character details',
-    tags: ['CSS', 'Javascript', 'Boostrap'],
-    live_link: 'link_to_live_version.com',
-    source_link: 'link_to_source_version.com',
+        'Explore the captivating world of Rick & Morty with this meticulously crafted React App. Discover 25 randomly generated characters from the animated series, complete with captivating details. Use the user-friendly search box to find your favorites instantly and click on character cards to dive into their backstories. With the option to refresh the character list, this app guarantees an ever-changing and entertaining experience for fans of all ages. Uncover the secrets of this beloved animated universe with the Rick & Morty React App.',
+    tags: ['React', 'REST API', 'Tailwind CSS'],
+    live_link: 'https://rick-morty-db.netlify.app/',
+    source_link: 'https://github.com/kaizipaul/metrics-app',
   },
   {
     id: 4,
-    title: 'High Scores',
-    image: './assets/images/card-image.png',
+    title: 'Leaderboard',
+    image: './assets/images/leaderboard.png',
     description:
-        "4 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    tags: ['CSS', 'HTML', 'Webpack'],
-    live_link: 'link_to_live_version.com',
-    source_link: 'link_to_source_version.com',
+        'This project showcases an immersive user experience where individuals can effortlessly log in their scores through a user-friendly form and instantaneously access and visualize their scores. It serves as a captivating demonstration of the seamless integration of asynchronous JavaScript and Webpack, highlighting the power and efficiency of these technologies in delivering dynamic and responsive web applications.',
+    tags: ['CSS', 'HTML', 'Webpack', 'JavaScript'],
+    live_link: 'https://kaizipaul.github.io/leaderboard-with-async/',
+    source_link: 'https://github.com/kaizipaul/leaderboard-with-async',
   },
   {
     id: 5,
     title: 'The Budget App',
-    image: './assets/images/card-image.png',
+    image: './assets/images/budget-app.png',
     description:
-        "5 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    tags: ['HTML', 'Javascript', 'Ruby'],
-    live_link: 'link_to_live_version.com',
-    source_link: 'link_to_source_version.com',
+        'The Budget app is a powerful mobile web application built with Ruby on Rails. It offers a user-friendly interface for managing and tracking your budget. With categorized transactions, it provides a clear overview of your expenses and enables informed financial decision-making. Whether you want to analyze spending patterns or set financial goals, the Budget app is your trusted companion for efficient budget management.',
+    tags: ['Auth', 'Ruby on Rails', 'PostgreSQL'],
+    live_link: 'https://thebudgettracker.onrender.com/',
+    source_link: 'https://github.com/kaizipaul/budget-app',
   },
   {
     id: 6,
     title: 'Rent-a-Car',
-    image: './assets/images/works-section.png',
+    image: './assets/images/rent-a-car.png',
     description:
-        "6 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    tags: ['Bootstrap', 'React', 'Ruby on Rails'],
-    live_link: 'link_to_live_version.com',
-    source_link: 'link_to_source_version.com',
+        'Rent-a-car is an easy to use web app built with React, designed for booking test drives. It offers a seamless user experience on both mobile and desktop. With features like sign-up, login, appointment booking, checking, and canceling, as well as secure logout, Rent-a-car simplifies the car rental process. Powered by a cutting-edge car booking API, this app ensures convenience and efficiency for users seeking a hassle-free test drive experience.',
+    tags: ['React', 'Bootstrap', 'REST API'],
+    live_link: 'https://deploy-preview-20--jocular-kheer-33ba60.netlify.app/',
+    source_link: 'https://github.com/kaizipaul/full-stack-frontend',
   },
 ];
 
 // Navigation
 
-// const headerBar = document.querySelectorAll('.header');
-// const menu = document.querySelector('.mobile-menu');
-// const cardsPopup = document.querySelector('#cards-popup');
-// const cardsClose = document.querySelector('#cards-popup .close');
-// let popupWindow = {};
+const mobileMenu = () => {
+  const hamburger = document.querySelector('.fa-bars');
+  const menu = document.querySelector('.mobile-menu');
+  const closeBtn = document.querySelector('.fa-xmark');
+
+  const menuItems = document.querySelectorAll('.menu-items > li');
+
+  hamburger.addEventListener('click', () => {
+    menu.classList.add('active');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    menu.classList.remove('active');
+  });
+
+  menuItems.forEach((menuItem) => {
+    menuItem.addEventListener('click', () => {
+      menu.classList.remove('active');
+    });
+  });
+};
+
+mobileMenu();
 
 // function disableScroll() {
 //   const horizontalPos = window.scrollX;
@@ -222,7 +240,7 @@ const renderProjectCards = (projectData) => {
 
   setInterval(() => {
     renderSampleProject();
-  }, 6 * 60 * 60 * 1000);
+  }, 60 * 60 * 1000);
 
   // Loop through the projects array
   projectData.forEach((project) => {
