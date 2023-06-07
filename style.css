@@ -75,6 +75,9 @@ header {
   background-color: #3e3c3c;
   padding: 1rem 9rem;
   color: #fff;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
 }
 
 .header {
@@ -99,7 +102,7 @@ header {
 }
 
 .landing-page {
-  padding: 6rem 1rem 12rem;
+  padding: 12rem 1rem;
   background-color: #1c1a19;
 }
 
