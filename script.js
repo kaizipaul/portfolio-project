@@ -3,7 +3,7 @@ const projectData = [
   {
     id: 1,
     title: 'To-do List',
-    image: './assets/images/to-do-list-screenshot.png',
+    image: './assets/images/to-do-list.png',
     description:
         'This project showcases the implementation of a basic to-do list using Webpack. It offers a seamless and efficient task management experience, allowing users to easily create, organize, and complete tasks. With its sleek design and powerful functionality, this project demonstrates the potential of Webpack in building practical and intuitive web applications.',
     tags: ['Tailwind CSS', 'Javascript', 'Webpack'],
