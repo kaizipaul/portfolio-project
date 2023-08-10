@@ -17,6 +17,8 @@
 
 - GitHub: [@kaizipaul](https://github.com/kaizipaul)
 
+- LinkedIn: [@kaizipaul](https://www.linkedin.com/in/kaizipaul/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
