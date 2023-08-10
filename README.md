@@ -11,7 +11,7 @@
 
 [Live Demo Link](https://kaizipaul.github.io/portfolio-project/)
 
-## Authors
+## Author
 
 👤 **Paul Kaizirege Vedasto**
 
