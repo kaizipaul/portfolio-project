@@ -1,11 +1,12 @@
 # Personal Portfolio Project
 
-> This project is made as a practise for HTML and CSS, and professional code writing.
+> My Portfolio page. Contains my profile as a software developer, my recent projects, and a contact section.
 
 ## Built With
 
 - HTML
 - CSS
+- JavaScript
 
 ## Live Demo
 
