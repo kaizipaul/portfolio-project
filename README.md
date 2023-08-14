@@ -6,7 +6,7 @@
 
 - HTML
 - CSS
-- JavaScript
+- Vanilla JavaScript
 
 ## Live Demo
 
